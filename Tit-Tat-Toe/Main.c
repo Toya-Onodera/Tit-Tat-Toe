@@ -7,7 +7,7 @@
 
 // プロトタイプ宣言
 void showBoard(int[]);
-void inputPlayer(int*, int);
+void inputPlayer(int[], int);
 int judgmentGame(int[]);
 
 int main (void)
@@ -26,7 +26,7 @@ int main (void)
 	{
 		showBoard(board);
 
-		inputPlayer(&board, turn);
+		inputPlayer(board, turn);
 
 		judgmentNum = judgmentGame(board);
 
@@ -96,7 +96,7 @@ void showBoard(int borad[])
 }
 
 // プレイヤーの入力部分の関数
-void inputPlayer(int *board, int turn)
+void inputPlayer(int board[], int turn)
 {
 	// scanf 時に表示するテキスト用の変数
 	char questionText[] = "?> ";
