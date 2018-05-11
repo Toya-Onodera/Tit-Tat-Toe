@@ -98,10 +98,6 @@ void showBoard(int borad[])
 // プレイヤーの入力部分の関数
 void inputPlayer(int board[], int turn)
 {
-	// scanf 時に表示するテキスト用の変数
-	char questionText[] = "?> ";
-	questionText[0] = (turn % 2 != 0) ? 'o' : 'x';
-
 	// scanf 時に格納する変数
 	int selectIndex = 0;
 
@@ -110,7 +106,7 @@ void inputPlayer(int board[], int turn)
 
 	while (!saveFlg)
 	{
-		printf("%s", questionText);
+		printf("%c> ", (turn % 2 != 0) ? 'o' : 'x');
 		scanf("%d", &selectIndex);
 
 
