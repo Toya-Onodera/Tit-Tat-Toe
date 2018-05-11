@@ -61,7 +61,7 @@ int main (void)
 void showBoard(int borad[])
 {
 	// 配列のインデックス用の変数
-	const index[9] = { 6, 7, 8, 3, 4, 5, 0, 1, 2 };
+	const int index[9] = { 6, 7, 8, 3, 4, 5, 0, 1, 2 };
 
 	for (int i = 0; i < 9; i++)
 	{
